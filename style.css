@@ -1,0 +1,121 @@
+.navBar ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.fotoProfil{
+    width: 200px;
+   
+}
+
+.deskripsi h4{
+    line-height: 10%;
+}
+
+#profile li .linkedin{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#profile li .linkedin:hover{
+    color: #055052;
+    text-decoration: none;
+    font-size: 18px;
+    transition: .5s ease-in-out;
+}
+
+#profile li .instagram{
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+#profile li .instagram:hover{
+    color: #BD4B4B;
+    text-decoration: none;
+    font-size: 18px;
+    transition: .5s ease-in-out;
+}
+
+#profile li{
+    margin-top: 1%;
+}
+
+hr{
+    margin-top: 2%;
+}
+
+#work-experience p{
+    line-height: 50%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+#work-experience span{
+    font-weight: bold;
+    color: #480032
+}
+
+#education{
+    margin-top: 4%;
+}
+
+#skills{
+    margin-top: 4%;
+}
+
+#contact-me{
+    margin-top: 4%;
+}
+
+label{
+    margin-top: 1%;
+    display: inline-block;
+}
+
+button{
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    background-color: #53B8BB;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+button:hover{
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    background-color: #53B8BB;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: .2s ease-in;
+}
+
+footer{
+    margin-top: 5%;
+    background-color: #F3F2C9;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+footer p{
+    margin-bottom: 10px;
+}
+
+footer a{
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -10,32 +10,135 @@
 <body>
 
     <!-- Bagian Nav Bar -->
-    <nav>
+    <nav class="navBar">
         <ul>
             <li>
-                <a href="#">Profile</a>
+                <a href="#profile">Profile</a>
             </li>
             <li>
-                <a href="#">About Me</a>
+                <a href="#about-me">About Me</a>
             </li>
             <li>
-                <a href="#">Work Experiences</a>
+                <a href="#work-experience">Work Experiences</a>
             </li>
             <li>
-                <a href="#">Education</a>
+                <a href="#education">Education</a>
             </li>
             <li>
-                <a href="#">Skills</a>
+                <a href="#skills">Skills</a>
             </li>
             <li>
-                <a href="#">Contact Me</a>
+                <a href="#contact-me">Contact Me</a>
             </li>
         </ul>
     </nav>
 
     <!-- Bagian Profile -->
     <section id = "profile">
-        <img src="asset/IMG_6478.JPG" alt="David Yu">
+        <img class = "fotoProfil"src="asset/img/IMG_6478.JPG" alt="David Yu">
+        <!-- Saya pisahkan bagian deskripsi agar saya bisa styling -->
+        <div class="deskripsi">
+            <h1>David Yu</h1>
+            <h4>Jalan Jenderal Sudirman no.58,Kel.Pasar 2,Kec.Muara Enim,Kab.Muara Enim,Prov.Sumatera Selatan (alamat rumah)</h4>
+            <h4>Jalan Salam Raya no.76,Kel.Rawa Belong,Kec.Kebon Jeruk,Jakarta Barat (alamat kost)</h4>
+            <h4>davidyuxe990@gmail.com (alamat email)</h4>
+            <h4>david.yu@binus.ac.id (email kampus)</h4>
+            <h4>082153897121 (no telepon)</h4>
+        </div>
+
+       <!-- Media Sosial -->
+        <li>
+            <a class = "linkedin" href="https://www.linkedin.com/in/david-yu-11b50b203/" target="_blank">Linkedin</a>
+        </li>
+        <li>
+            <a class = "instagram" href="https://www.instagram.com/davzyx/" target="_blank">Instagram</a>
+        </li>
+        <hr>
     </section>
+
+    <!-- Bagian About Me -->
+    <section id="work-experience">
+        <h1>About Me</h1>
+        <br>
+
+        <!-- Deskripsi dalam about me -->
+        <p class = "p1">Saya adalah mahasiswa Binus University dengan jurusan Computer Science dan sedang menempuh semester 5. </p>
+        <!-- Saya SPAN untuk menunjukkan kata-kata yang penting -->
+        <p>Saya memiliki keahlian di bidang Web Developer terutama <span>HTML,CSS,JS, dan Php </span>(untuk Js dan Php masih belajar).</p> 
+        <p>Selain itu juga saya memiliki keahlian lain di bidang desain, terutama <span>desain grafis dan UI/UX</span>  dikarenakan di masa sekolah saya banyak menghabiskan waktu untuk mendesain sekolah saya.</p>
+        <p>Dan terakhir, saya memiliki pengetahuan di bidang Database dikarenakan di kampus saya mengambil peminatan Database, sehingga pengetahuan dalam <span>SQL dan Big Data</span>  cukup mumpuni saya ketahui.</p>
+    </section>
+
+    <!-- Bagian Education -->
+    <section id="education">
+        <h1>Education</h1>
+        <br>
+        <h4>Universitas Bina Nusantara (Kemanggisan)</h4>
+        <hr>
+        <h5>Teknik Informatika</h5>
+        <h5>2019 - 2023</h5>
+    </section>
+
+    <!-- Bagian Skills -->
+    <section id="skills">
+        <h1>Skills</h1>
+        <br>
+        <!-- Bagian list skill -->
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>Graphic Design</li>
+            <li>UI/UX Design</li>
+            <li>SQL</li>
+            <li>C/C++</li>
+            <li>Python</li>
+        </ol>
+    </section>
+
+    <section id="contact-me">
+        <h1>Contact Me</h1>
+        <br>
+        <!-- Membuat Form -->
+        <form action="">
+            <!-- Form Firstname -->
+            <label for="firstname">Firstname</label><br>
+            <input type="text" id="firstname" name="firstname" placeholder="firstname"><br>
+
+            <!-- Form Lastname -->
+            <label for="lastname">Lastname</label><br>
+            <input type="text" id="lastname" name="lastname" placeholder="lastname"><br>
+
+            <!-- Form Select -->
+            <label for="negara">Negara anda</label><br>
+            <select name="negara" id="negara">
+                <option value="#">Pilihlah negara anda...</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Amerika Serikat">Amerika Serikat</option>
+                <option value="Kanada">Kanada</option>
+                <option value="Jepang">Jepang</option>
+                <option value="Inggrs">Inggris</option>
+                <option value="Tiongkok">Tiongkok</option>
+                <option value="Perancis">Perancis</option>
+                <option value="None">Tidak ada di daftar :(</option>
+            </select><br>
+
+            <!-- Form TextArea -->
+            <label for="pesan">Pesan anda</label><br>
+            <textarea name="pesan" id="pesan" cols="50" rows="4" placeholder="Masukkan pesan anda disini"></textarea><br>
+
+            <!-- Button -->
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+    <!-- Bagian Footer -->
+    <footer>
+        <p>David Yu</p>
+        <!-- Email ke email saya -->
+        <a href="mailto:davidyuxe990@gmail.com">Email Me: Davidyuxe990@gmail.com</a> 
+    </footer>
+
 </body>
 </html>
