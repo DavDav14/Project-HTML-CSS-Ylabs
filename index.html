@@ -1,144 +1,275 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="home">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Yu</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/css/bootstrap.min.css">
 </head>
 <body>
 
-    <!-- Bagian Nav Bar -->
-    <nav class="navBar">
-        <ul>
-            <li>
-                <a href="#profile">Profile</a>
+    <!-- Awal Navigation Bar -->
+    <nav class=" navDavid sticky-top navbar-dark bg-dark navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand page-scroll" href="#home">David Yu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link page-scroll " href="#profile">Profile </a>
             </li>
-            <li>
-                <a href="#about-me">About Me</a>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#work-experience">Work Experience</a>
             </li>
-            <li>
-                <a href="#work-experience">Work Experiences</a>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#education">Education</a>
             </li>
-            <li>
-                <a href="#education">Education</a>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#skills">Skills</a>
             </li>
-            <li>
-                <a href="#skills">Skills</a>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="#contact-me">Contact Me</a>
             </li>
-            <li>
-                <a href="#contact-me">Contact Me</a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- Bagian Profile -->
-    <section id = "profile">
-        <img class = "fotoProfil"src="asset/img/IMG_6478.JPG" alt="David Yu">
-        <!-- Saya pisahkan bagian deskripsi agar saya bisa styling -->
-        <div class="deskripsi">
-            <h1>David Yu</h1>
-            <h4>Jalan Jenderal Sudirman no.58,Kel.Pasar 2,Kec.Muara Enim,Kab.Muara Enim,Prov.Sumatera Selatan (alamat rumah)</h4>
-            <h4>Jalan Salam Raya no.76,Kel.Rawa Belong,Kec.Kebon Jeruk,Jakarta Barat (alamat kost)</h4>
-            <h4>davidyuxe990@gmail.com (alamat email)</h4>
-            <h4>david.yu@binus.ac.id (email kampus)</h4>
-            <h4>082153897121 (no telepon)</h4>
+          </ul>
         </div>
+      </nav>
+      <!-- Akhir Nav Bar -->
 
-       <!-- Media Sosial -->
-        <li>
-            <a class = "linkedin" href="https://www.linkedin.com/in/david-yu-11b50b203/" target="_blank">Linkedin</a>
-        </li>
-        <li>
-            <a class = "instagram" href="https://www.instagram.com/davzyx/" target="_blank">Instagram</a>
-        </li>
-        <hr>
+
+    <!-- Awal Bagian Profile -->
+    <section id = "profile" class="text-center">
+        <!-- container -->
+          <div class="deskripsi">
+            <!-- awal dari jumbotron -->
+            <div class="cont-jumbotron text-white">
+              <div class="fotoDav rounded mx-auto d-block">
+
+              </div>
+              <h1>David Yu</h1>
+              <p>Mahasiswa | Web Developer | UI/UX Designer | Database Engineer</p>
+            </div>
+            <!-- akhir dari jumbotron -->
+  
+            <!-- Saya buat container baru untuk membuatnya menjadi GRID  -->
+            <div class="container con-desc">
+              <div class="row justify-content-center">
+                <div class="col-lg-5 mt-3 desKiri"> <!--desKiri desKanan dan desTengah dibuat untuk efek PARALLAX-->
+                  <!-- Alamat rumah -->
+                  <h4>Alamat Tinggal:</h4>
+                  <h5>Jalan Jenderal Sudirman no.58,Kel.Pasar 2,Kec.Muara Enim,Kab.Muara Enim,Prov.Sumatera Selatan </h5>
+                </div>
+                <div class="col-lg-5 mt-3 desKanan">
+                    <!-- Email -->
+                  <h4>Email:</h4>
+                  <h5>davidyuxe990@gmail.com</h5>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-lg-5 mt-3 desTengah">
+                    <!-- No Telepon -->
+                    <h4>No. Telepon:</h4>
+                    <h5>082153897121 (WA/Telepon) </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- akhir dari grid isi desk -->
+
+       <!-- awal dari Media Sosial -->
+          <div class="sosmed container">
+            <div class="row justify-content-center mt-5">
+              <div class="col-md-2">
+                <li>
+                  <a class = "linkedin" href="https://www.linkedin.com/in/david-yu-11b50b203/" target="_blank">My Linkedin</a>
+                </li>
+              </div>
+              <div class="col-md-2">
+                <li>
+                  <a class = "instagram" href="https://www.instagram.com/davzyx/" target="_blank">My Instagram</a>
+                </li>  
+              </div>
+            </div>
+          </div>
+          <!-- akhir dari sosmed -->
     </section>
+    <!-- Akhir bagian Profile -->
 
-    <!-- Bagian About Me -->
+    <!-- Awal bagian About Me -->
     <section id="work-experience">
-        <h1>About Me</h1>
-        <br>
-
-        <!-- Deskripsi dalam about me -->
-        <p class = "p1">Saya adalah mahasiswa Binus University dengan jurusan Computer Science dan sedang menempuh semester 5. </p>
-        <!-- Saya SPAN untuk menunjukkan kata-kata yang penting -->
-        <p>Saya memiliki keahlian di bidang Web Developer terutama <span>HTML,CSS,JS, dan Php </span>(untuk Js dan Php masih belajar).</p> 
-        <p>Selain itu juga saya memiliki keahlian lain di bidang desain, terutama <span>desain grafis dan UI/UX</span>  dikarenakan di masa sekolah saya banyak menghabiskan waktu untuk mendesain sekolah saya.</p>
-        <p>Dan terakhir, saya memiliki pengetahuan di bidang Database dikarenakan di kampus saya mengambil peminatan Database, sehingga pengetahuan dalam <span>SQL dan Big Data</span>  cukup mumpuni saya ketahui.</p>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h1>About Me</h1>
+            <hr>
+          </div>
+        </div>
+      </div>
+        <!-- Deskripsi about me -->
+        <div class="container cont-desc-about">
+          <div class="row ">
+            <div class="col-md-6">
+              <p class="pKiri">Saya adalah mahasiswa Binus University dengan jurusan Computer Science dan sedang menempuh semester 5. </p>
+              <!-- Saya SPAN untuk menunjukkan kata-kata yang penting -->
+              <p class="pKiri">Saya memiliki keahlian di bidang Web Developer terutama <span>HTML,CSS,JS, dan Php </span>(untuk Js dan Php masih belajar).</p> 
+            </div>
+            <div class="col-md-6">
+              <p class="pKanan">Selain itu juga saya memiliki keahlian lain di bidang desain, terutama <span>desain grafis dan UI/UX</span>  dikarenakan di masa sekolah saya banyak menghabiskan waktu untuk mendesain sekolah saya.</p>
+              <p class="pKanan">Dan terakhir, saya memiliki pengetahuan di bidang Database dikarenakan di kampus saya mengambil peminatan Database, sehingga pengetahuan dalam <span>SQL dan Big Data</span>  cukup mumpuni saya ketahui.</p>
+            </div>
+          </div>
+        </div>
     </section>
+    <!-- akhir dari about-me -->
 
-    <!-- Bagian Education -->
+    <!-- awal Bagian Education -->
     <section id="education">
-        <h1>Education</h1>
-        <br>
-        <h4>Universitas Bina Nusantara (Kemanggisan)</h4>
-        <hr>
-        <h5>Teknik Informatika</h5>
-        <h5>2019 - 2023</h5>
+      <div class="container">
+        <!-- Judul education -->
+        <div class="row">
+          <div class="col-sm-12">
+            <h1 class="text-center
+            ">Education</h1>
+            <hr>
+          </div>
+        </div>
+      </div>
+        <!-- Row 1 -->
+      <div class="row text-center cont-edu justify-content-center ">
+        <div class="col-md-4 mt-5 eduProfile ">
+          <h4>Universitas Bina Nusantara (Kemanggisan)</h4>
+          <h5>Teknik Informatika</h5>
+          <h5>2019 - 2023</h5>
+        </div>
+        <div class="col-md-4 mt-5 eduProfile"> <!-- Edu profile untuk membuat efek parallax-->
+          <h4>BPPTIK Kominfo Junior Web Developer Batch 6</h4>
+          <h5>Web Developer</h5>
+          <h5>Juni - Juli 2021</h5>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="row text-center justify-content-center cont-edu mt-5">
+        <div class="col-md-4 eduProfile">
+          <h4>Microsoft Indonesia</h4>
+          <h5>Data and Artificial Intelligence</h5>
+          <h5>Agustus - Desember 2021</h5>
+        </div>
+      </div>
     </section>
 
     <!-- Bagian Skills -->
     <section id="skills">
-        <h1>Skills</h1>
-        <br>
-        <!-- Bagian list skill -->
-        <ol>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>PHP</li>
-            <li>Graphic Design</li>
-            <li>UI/UX Design</li>
-            <li>SQL</li>
-            <li>C/C++</li>
-            <li>Python</li>
-        </ol>
+      <div class="container text-center text-white">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Skills</h1>
+            <hr>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-4">
+            <p class="sKiri">1. HTML</p> <!--sKiri dan sKanan dibuat untuk membuat efek parallax-->
+            <p class="sKiri">2. CSS</p>
+            <p class="sKiri">3. JavaScript</p>
+            <p class="sKiri">4. JQuery</p>
+            <p class="sKiri">5. PHP</p>
+          </div>
+          <div class="col-md-4">
+            <p class="sKanan">6. Graphic Design</p>
+            <p class="sKanan">7. UI/UX Design</p>
+            <p class="sKanan">8. SQL</p>
+            <p class="sKanan">9. C/C++</p>
+            <p class="sKanan">10. Python</p>
+          </div>
+        </div>
+      </div>
     </section>
+    <!-- akhir dari Skills -->
 
+
+    <!-- Awal dari Contact Me -->
     <section id="contact-me">
-        <h1>Contact Me</h1>
-        <br>
-        <!-- Membuat Form -->
-        <form action="">
-            <!-- Form Firstname -->
-            <label for="firstname">Firstname</label><br>
-            <input type="text" id="firstname" name="firstname" placeholder="firstname"><br>
+      <div class="container">
+        <!-- Judul Contact Me -->
+        <div class="row text-center mb-4">
+          <div class="col-md-12">
+            <h1>Contact Me</h1>
+            <hr>
+          </div>
+        </div>
 
-            <!-- Form Lastname -->
-            <label for="lastname">Lastname</label><br>
-            <input type="text" id="lastname" name="lastname" placeholder="lastname"><br>
-
-            <!-- Form Select -->
-            <label for="negara">Negara anda</label><br>
-            <select name="negara" id="negara">
-                <option value="#">Pilihlah negara anda...</option>
-                <option value="Indonesia">Indonesia</option>
-                <option value="Amerika Serikat">Amerika Serikat</option>
-                <option value="Kanada">Kanada</option>
-                <option value="Jepang">Jepang</option>
-                <option value="Inggrs">Inggris</option>
-                <option value="Tiongkok">Tiongkok</option>
-                <option value="Perancis">Perancis</option>
-                <option value="None">Tidak ada di daftar :(</option>
-            </select><br>
-
-            <!-- Form TextArea -->
-            <label for="pesan">Pesan anda</label><br>
-            <textarea name="pesan" id="pesan" cols="50" rows="4" placeholder="Masukkan pesan anda disini"></textarea><br>
-
-            <!-- Button -->
-            <button type="submit">Kirim</button>
-        </form>
+        <!-- awal FORM -->
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form >
+              <div class="my-3 form-group fKiri">
+                <label for="firstname" class="form-label">Firstname</label>
+                <input type="text" class="form-control" id="firstname" placeholder="Input your Firstname">
+              </div>
+              <div class="mb-3 form-group fKanan">
+                <label for="lastname" class="form-label">Lastname</label>
+                <input type="text" class="form-control" id="lastname" placeholder="Input your Lastname">
+              </div>
+              <div class="mb-3 form-group fKiri">
+                <label for="country" class="form-label">Country</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>-- Choose Your Country --</option>
+                  <option value="Indonesia">Indonesia</option>
+                  <option value="Amerika Serikat">USA</option>
+                  <option value="Kanada">Canada</option>
+                  <option value="Jepang">Japan</option>
+                  <option value="Inggrs">UK</option>
+                  <option value="Tiongkok">China</option>
+                  <option value="Perancis">France</option>
+                  <option value="None">Not on the list :(</option>
+                </select>
+              </div>
+              <div class=" mb-3 form-group fKanan">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message for me"></textarea>
+              </div>
+              <div class="fBawah">
+                <button type="button" class="btn btn-outline-secondary ">Submit</button>
+              </div>
+             
+            </form>
+          </div>
+        </div>
+        <!-- akhir dari FORM -->
+      </div>
     </section>
+    <!-- akhir dari CONTACT ME -->
 
-    <!-- Bagian Footer -->
+    <!-- awal Bagian Footer -->
     <footer>
-        <p>David Yu</p>
-        <!-- Email ke email saya -->
-        <a href="mailto:davidyuxe990@gmail.com">Email Me: Davidyuxe990@gmail.com</a> 
+      <div class="container">
+        <div class="row mt-0 py-4 text-center justify-content-center">
+          <div class="col-sm-4 ">
+            <p style="margin-bottom: 0;" >Copyright &copy; 2021 | Created by David Yu</p>
+          </div>
+            <div class="col-sm-4">
+              <a href="mailto:davidyuxe990@gmail.com">Email Me: Davidyuxe990@gmail.com</a> 
+            </div>
+         
+        </div>
+      </div>
     </footer>
+    <!-- akhir footer -->
+
+    <!-- Script JQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- Script buat animasi perpindahan navbar -->
+    <script src="js/jquery.easing.1.3.js"></script>
+
+    <!-- Script buat plugins bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script kita -->
+    <script src="js/script.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,278 @@
+/* Nav Bar, mengatur margin agar tulisannya ke kiri */
+.navDavid a{
+    margin-left: 2rem;
+}
+
+/* Navbar, dimana setiap menu ada jarak kanan*/
+/* Font size jadi 20px */
+.navDavid div ul { /* Disini saya pakai UL untuk membuat ul nya berada di tengah layar*/
+    margin: 0 auto;
+    font-size: 20px; 
+}
+
+/* Buat foto profil */
+#profile .fotoDav{
+    width: 10em;
+    object-fit: cover; /* Memberi skala ke foto agar sesuai dengan cover */
+    object-position: 120%; /* Memberi tahu posisinya */
+    height: 250px;
+    margin-bottom: 1rem;
+    border: 4px solid #eee;
+    background-image: url("../asset/img/IMG_6478.JPG");
+    background-size: cover;
+    transition: .5s ease-in-out;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    
+}
+
+/* hover foto profil */
+#profile .fotoDav:hover{
+    background-image: url("../asset/img/WhatsApp\ Image\ 2021-07-05\ at\ 22.37.24.jpeg");
+}
+
+
+/* Ukuran dari container pembungkus deskripsi */
+/* dimana disini kita membuat marginnya auto kiri kanan agar dia pas di tengah-tengah */
+.deskripsi{
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Menampung foto dan nama */
+.cont-jumbotron{
+    background-image: url("../asset/img/pexels-designecologist-1779487.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 -120px;
+    padding: 4em 0 2em;
+    overflow: hidden;
+}
+
+.cont-jumbotron{
+    text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+/* Memperkecil ukuran p di jumbotoron */
+.deskripsi p{
+    font-size: 1.2rem;
+}
+
+/* container desc, mengatur margin top */
+.con-desc{
+    margin-top: 2em;
+}
+
+.con-desc h4{
+    font-weight: bold;
+}
+
+/* Dilakukan agar disaat browser diperkecil, jarak antar col tidak mepet */
+.con-desc h5{
+    margin-bottom: 2em;
+}
+
+.desKiri, .desKanan, .desTengah{
+    opacity: 0;
+    transform: translate(-50px,0);
+    transition: .5s ease-in;
+}
+
+.desKanan{
+    transform: translate(50px,0);
+}
+
+.desTengah{
+    transform: translate(0,-50px);
+}
+
+.desKiri.desMuncul, .desKanan.desMuncul, .desTengah.desMuncul{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+/* membuat tautan sosial media ke tengah */
+.sosmed{
+    margin: 0 auto;
+    width: 50%;
+    min-height: 250px;
+    text-align: center;
+    list-style: none;
+}
+
+#profile li .linkedin{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#profile li .linkedin:hover{
+    color: #055052;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: .5s ease-in-out;
+}
+
+#profile li .instagram{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#profile li .instagram:hover{
+    color: #BD4B4B;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: .5s ease-in-out;
+}
+
+#profile li{
+    margin-top: 1%;
+}
+/* Akhir styling sosmed */
+
+
+/* Awal Styling work-experience*/
+
+#work-experience{
+    background-image: url("../asset/img/WhatsApp\ Image\ 2021-07-05\ at\ 22.37.02.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 -550px;
+}
+
+.container h1{
+    padding-top: 20px;
+}
+
+.container hr{
+    width: 250px;
+    border-top: 3px solid black;
+    margin: 0 auto;
+}
+
+.cont-desc-about{
+   margin-top: 2em;
+   min-height: 550px;
+}
+
+#work-experience span{
+    font-weight: bold;
+    color: #480032
+}
+
+.pKiri, .pKanan{
+    opacity: 0;
+    transform: translate(-50px,0) rotate(15deg);
+    transition: 1s;
+}
+
+.pKanan{
+    transform: translate(50px,0) rotate(-15deg);
+}
+
+.pKiri.pMuncul, .pKanan.pMuncul {
+    opacity: 1;
+    transform: translate(0,0);
+}
+/* akhir styling work-experience */
+
+section{
+    min-height: 400px;
+}
+
+/* awal styling education */
+#education{
+    min-height: 800px;
+}
+
+#education h4{
+   font-weight: bold;
+}
+
+#education .eduProfile{
+    opacity: 0;
+    transform:  translate(0,-40px);
+    transition: .8s ease-in;
+}
+
+#education .eduProfile.eduMuncul{
+    opacity: 1;
+    transform: translate(0,0);
+}
+/* akhir styling education */
+
+/* awal styling skills */
+#skills{
+    background-image: url("../asset/img/pexels-kevin-ku-577585.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 -250px;
+    min-height: 700px;
+}
+
+#skills p{
+    font-size: 1.2em;
+}
+
+.sKiri, .sKanan{
+    opacity: 0;
+    transform: translate(-50px,0);
+    transition: .5s ease-in;
+}
+
+.sKanan{
+    transform: translate(50px,0);
+}
+
+.sKiri.sMuncul , .sKanan.sMuncul{
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+
+/* akhir styling skills */
+#contact-me{
+    margin-top: 4%;
+    min-height: 800px;
+}
+
+.fKiri, .fKanan, .fBawah{
+    opacity: 0;
+    transform: translate(-150px,0);
+    transition: .5s ease-in-out;
+}
+
+.fKanan{
+    transform: translate(150px,0);
+}
+
+.fBawah{
+    transform: translate(0,150px);
+}
+
+.fKiri.fMuncul, .fKanan.fMuncul, .fBawah.fMuncul{
+    transform: translate(0,0);
+    opacity: 1;
+}
+
+footer{
+    background-color: #eee;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
