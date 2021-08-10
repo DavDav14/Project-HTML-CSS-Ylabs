@@ -107,7 +107,7 @@ $(window).scroll(function(){
         $('#contact-me .fBawah').each(function(i){
             setTimeout(function(){
                 $('#contact-me .fBawah').eq(i).addClass('fMuncul');
-            }, 100 * (i+1));
+            }, 1200 * (i+1));
         });
     };
 
