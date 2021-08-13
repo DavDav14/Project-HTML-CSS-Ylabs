@@ -110,8 +110,24 @@ $(window).scroll(function(){
             }, 1200 * (i+1));
         });
     };
-
-
-
-
 });
+
+//Event console.log (soal Js no 4)
+var form = document.getElementById('form-contact')
+
+form.addEventListener('submit',function(event){
+    event.preventDefault() //membuat form menjadi auto submit menggunakan code yang sudah kita buat
+
+    var firstName = document.getElementById('firstname').value //mengambil data firstname
+    console.log(firstName)
+
+    var lastName = document.getElementById('lastname').value //mengambil data lastname
+    console.log(lastName)
+
+    var select = document.getElementById('select').value //mengambil data select
+    console.log(select)
+
+    var textarea = document.getElementById('textarea').value //mengambil data dari textarea (message)
+    console.log(textarea)
+})
+
